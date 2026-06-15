@@ -1,0 +1,2223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neuro Transformers Private Limited — Enterprise Workforce & AI Engineering</title>
+  <meta name="description" content="Neuro Transformers unites elite sourcing, automated recruitment workflows, and conversational AI to deliver workforce scale, speed, and quality at institutional depth across India." />
+  <meta property="og:title" content="Neuro Transformers Private Limited — Enterprise Workforce & AI Engineering" />
+  <meta property="og:description" content="India's most advanced tri-partner recruitment and AI engineering alliance. 500+ deployments, pan-India operations." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200&q=80" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://neurotransformers.in/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Neuro Transformers Private Limited",
+    "description": "Enterprise workforce logistics and AI engineering firm operating through the Synapse Workforce OS.",
+    "url": "https://neurotransformers.in",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Ahmedabad",
+      "addressRegion": "Gujarat",
+      "addressCountry": "IN"
+    },
+    "areaServed": "IN",
+    "knowsAbout": ["IT Staffing", "AI Engineering", "Workforce Automation", "Recruitment Technology"]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       CSS CUSTOM PROPERTIES
+    ============================================================ */
+    :root {
+      --color-bg:          #0A0A0A;
+      --color-bg-card:     #141414;
+      --color-bg-mid:      #111111;
+      --color-text:        #F5F5F0;
+      --color-text-muted:  #9A9A94;
+      --color-accent:      #C9A84C;
+      --color-accent-dim:  rgba(201, 168, 76, 0.15);
+      --color-accent-glow: rgba(201, 168, 76, 0.25);
+      --color-border:      rgba(255, 255, 255, 0.08);
+      --color-border-mid:  rgba(255, 255, 255, 0.12);
+      --color-divider:     rgba(201, 168, 76, 0.4);
+
+      --font-family:   'Inter', system-ui, sans-serif;
+
+      --fs-hero:       clamp(2.5rem, 6vw + 1rem, 5rem);
+      --fs-h2:         clamp(1.75rem, 3vw + 0.5rem, 3.25rem);
+      --fs-h3:         clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+      --fs-body:       clamp(1rem, 1.2vw + 0.3rem, 1.125rem);
+      --fs-small:      0.8125rem;
+      --fs-label:      0.6875rem;
+
+      --space-xs:  0.5rem;
+      --space-sm:  1rem;
+      --space-md:  2rem;
+      --space-lg:  4rem;
+      --space-xl:  6rem;
+      --space-xxl: 9rem;
+
+      --radius-sm:  6px;
+      --radius-md:  12px;
+      --radius-pill: 999px;
+
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-width: 1240px;
+    }
+
+    /* ============================================================
+       RESET & BASE
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-size: var(--fs-body);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul { list-style: none; }
+
+    /* ============================================================
+       UTILITY CLASSES
+    ============================================================ */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      padding: 0.35rem 0.875rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: var(--space-md);
+    }
+
+    .section-label::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--color-border);
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-family);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.875rem 2rem;
+      border-radius: var(--radius-pill);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--color-accent);
+      color: #0A0A0A;
+    }
+
+    .btn-primary:hover {
+      background: #dbb95a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(201, 168, 76, 0.35);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-text);
+      border: 1px solid var(--color-border-mid);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-accent);
+      color: #0A0A0A;
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    /* scroll-reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ============================================================
+       NAVBAR
+    ============================================================ */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 1.25rem 0;
+      transition: background var(--transition), backdrop-filter var(--transition), padding var(--transition), border-bottom var(--transition);
+    }
+
+    #navbar.scrolled {
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      padding: 0.875rem 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+
+    .nav-logo {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: -0.01em;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-pill);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--color-text);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .nav-cta {
+      flex-shrink: 0;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 0.5rem;
+      background: none;
+      border: none;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--color-text);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 0.25rem;
+      padding: 1rem 0 1.5rem;
+      border-top: 1px solid var(--color-border);
+      margin-top: 1rem;
+    }
+
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      padding: 0.625rem 0.5rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .mobile-nav a:hover { color: var(--color-text); }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    #home {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 10, 10, 0.92) 0%,
+        rgba(10, 10, 10, 0.80) 50%,
+        rgba(10, 10, 10, 0.88) 100%
+      );
+    }
+
+    /* CSS dot-grid overlay */
+    .hero-dotgrid {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 28px 28px;
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: calc(var(--space-xxl) + 2rem) 0 var(--space-xxl);
+      max-width: 780px;
+    }
+
+    .hero-content h1 {
+      font-size: var(--fs-hero);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: var(--space-md);
+    }
+
+    .hero-content h1 span {
+      color: var(--color-accent);
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 1.4vw + 0.3rem, 1.2rem);
+      font-weight: 400;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+      max-width: 620px;
+      margin-bottom: var(--space-lg);
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      align-items: center;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(8px);
+      overflow: hidden;
+      width: fit-content;
+    }
+
+    .hero-stat {
+      padding: 1rem 1.5rem;
+      text-align: center;
+      border-right: 1px solid var(--color-border);
+    }
+
+    .hero-stat:last-child { border-right: none; }
+
+    .hero-stat-num {
+      display: block;
+      font-size: 1.375rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1.2;
+    }
+
+    .hero-stat-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      letter-spacing: 0.04em;
+      margin-top: 0.2rem;
+    }
+
+    /* ============================================================
+       TRUSTED BY — MARQUEE STRIP
+    ============================================================ */
+    #trusted {
+      padding: var(--space-lg) 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      overflow: hidden;
+      background: var(--color-bg-mid);
+    }
+
+    .trusted-label {
+      text-align: center;
+      font-size: var(--fs-label);
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .marquee-wrapper {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    }
+
+    .marquee-track {
+      display: flex;
+      gap: 1rem;
+      width: max-content;
+      animation: marquee 30s linear infinite;
+    }
+
+    .marquee-track:hover { animation-play-state: paused; }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .logo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      border: 1px solid var(--color-border-mid);
+      border-radius: var(--radius-pill);
+      background: var(--color-bg-card);
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      white-space: nowrap;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .logo-pill::before {
+      content: '●';
+      font-size: 0.5rem;
+      color: var(--color-accent);
+    }
+
+    .logo-pill:hover {
+      border-color: var(--color-accent);
+      color: var(--color-text);
+    }
+
+    /* ============================================================
+       ABOUT SECTION
+    ============================================================ */
+    #about {
+      padding: var(--space-xxl) 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: center;
+    }
+
+    .about-heading {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-md);
+    }
+
+    .about-heading span { color: var(--color-accent); }
+
+    .about-body {
+      color: var(--color-text-muted);
+      font-size: var(--fs-body);
+      line-height: 1.8;
+      margin-bottom: var(--space-lg);
+    }
+
+    .feature-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .feature-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .about-image-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      border: 1px solid var(--color-border);
+    }
+
+    .about-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .about-image-wrap:hover img { transform: scale(1.03); }
+
+    /* ============================================================
+       SERVICES / ALLIANCES
+    ============================================================ */
+    #services {
+      padding: var(--space-xxl) 0;
+      background: var(--color-bg-mid);
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+    }
+
+    .services-header h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .service-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-top: 2px solid var(--color-accent);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(201, 168, 76, 0.4);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .service-icon {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .service-card h3 {
+      font-size: var(--fs-h3);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .service-card p {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .service-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .service-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+
+    .service-list li::before {
+      content: '—';
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 0.05em;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-top: auto;
+      transition: var(--transition);
+    }
+
+    .service-link:hover { gap: 0.6rem; }
+
+    /* ============================================================
+       SYNAPSE WORKFORCE OS
+    ============================================================ */
+    #synapse {
+      padding: var(--space-xxl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* subtle grid texture */
+    #synapse::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 50px 50px;
+      pointer-events: none;
+    }
+
+    .synapse-header {
+      text-align: center;
+      margin-bottom: var(--space-xl);
+      position: relative;
+      z-index: 1;
+    }
+
+    .synapse-header h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .synapse-panels {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+      position: relative;
+      z-index: 1;
+    }
+
+    .synapse-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: center;
+      padding: 2.5rem;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .synapse-panel:hover {
+      border-color: var(--color-border-mid);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .synapse-panel.flip { direction: rtl; }
+    .synapse-panel.flip > * { direction: ltr; }
+
+    .synapse-domain {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+      border: 1px solid rgba(201, 168, 76, 0.25);
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .synapse-panel h3 {
+      font-size: var(--fs-h3);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+    }
+
+    .synapse-sub {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .synapse-panel p {
+      color: var(--color-text-muted);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .synapse-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .synapse-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--color-border);
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-pill);
+    }
+
+    .synapse-img-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      border: 1px solid var(--color-border);
+    }
+
+    .synapse-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ============================================================
+       STATS / SOCIAL PROOF
+    ============================================================ */
+    #stats {
+      padding: var(--space-xl) 0;
+      position: relative;
+      background: var(--color-bg-card);
+      overflow: hidden;
+    }
+
+    /* noise texture */
+    #stats::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--color-border);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      margin-bottom: var(--space-xl);
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat-item {
+      background: var(--color-bg-card);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    .stat-num {
+      display: block;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      color: var(--color-accent);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-desc {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .testimonial-block {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2.5rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+    }
+
+    .testimonial-quote {
+      font-size: clamp(1.05rem, 1.5vw + 0.3rem, 1.3rem);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.8;
+      color: var(--color-text);
+      margin-bottom: 1.5rem;
+    }
+
+    .testimonial-quote::before { content: '\201C'; color: var(--color-accent); font-size: 2em; line-height: 0; vertical-align: -0.4em; margin-right: 0.1em; }
+    .testimonial-quote::after  { content: '\201D'; color: var(--color-accent); font-size: 2em; line-height: 0; vertical-align: -0.4em; margin-left: 0.1em; }
+
+    .testimonial-author {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.04em;
+    }
+
+    .testimonial-author span {
+      color: var(--color-text-muted);
+      font-weight: 400;
+    }
+
+    /* ============================================================
+       CLIENT PORTFOLIO
+    ============================================================ */
+    #clients {
+      padding: var(--space-xxl) 0;
+      background: var(--color-bg-mid);
+    }
+
+    .clients-header {
+      margin-bottom: var(--space-xl);
+    }
+
+    .clients-header h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      max-width: 600px;
+    }
+
+    .client-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .client-table thead tr {
+      background: var(--color-accent-dim);
+      border-bottom: 1px solid rgba(201,168,76,0.25);
+    }
+
+    .client-table th {
+      padding: 1rem 1.5rem;
+      text-align: left;
+      font-size: var(--fs-label);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+    }
+
+    .client-table tbody tr {
+      border-bottom: 1px solid var(--color-border);
+      transition: var(--transition);
+    }
+
+    .client-table tbody tr:last-child { border-bottom: none; }
+
+    .client-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+
+    .client-table tbody tr:hover {
+      background: rgba(201, 168, 76, 0.06);
+      border-left: 3px solid var(--color-accent);
+    }
+
+    .client-table td {
+      padding: 1.1rem 1.5rem;
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+    }
+
+    .client-table td:first-child {
+      color: var(--color-text);
+      font-weight: 600;
+    }
+
+    .industry-tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--color-border);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-pill);
+    }
+
+    /* ============================================================
+       PROCESS / HOW IT WORKS
+    ============================================================ */
+    #process {
+      padding: var(--space-xxl) 0;
+    }
+
+    .process-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .process-left h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--space-xl);
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 1.5rem;
+      padding-bottom: var(--space-lg);
+      position: relative;
+    }
+
+    .step:last-child { padding-bottom: 0; }
+
+    .step-number-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .step-num {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--color-accent);
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .step:hover .step-num {
+      background: var(--color-accent);
+      color: #0A0A0A;
+      border-color: var(--color-accent);
+    }
+
+    .step-line {
+      width: 1px;
+      flex: 1;
+      background: var(--color-border);
+      margin-top: 0.5rem;
+    }
+
+    .step:last-child .step-line { display: none; }
+
+    .step-body { padding-top: 0.75rem; }
+
+    .step-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-body h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-body p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.75;
+    }
+
+    .process-right {
+      position: sticky;
+      top: 6rem;
+    }
+
+    .process-img-wrap {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      border: 1px solid var(--color-border);
+    }
+
+    .process-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ============================================================
+       CTA BAND
+    ============================================================ */
+    #cta {
+      position: relative;
+      padding: var(--space-xxl) 0;
+      overflow: hidden;
+    }
+
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+    }
+
+    .cta-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cta-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10,10,10,0.92), rgba(10,10,10,0.75));
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .cta-content h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--space-md);
+    }
+
+    .cta-content p {
+      color: var(--color-text-muted);
+      font-size: clamp(1rem, 1.3vw + 0.3rem, 1.125rem);
+      line-height: 1.75;
+      margin-bottom: var(--space-lg);
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      justify-content: center;
+    }
+
+    /* ============================================================
+       CONTACT SECTION
+    ============================================================ */
+    #contact {
+      padding: var(--space-xxl) 0;
+      background: var(--color-bg-mid);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: var(--space-md);
+    }
+
+    .contact-left p {
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: var(--space-lg);
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-sm);
+      background: var(--color-accent-dim);
+      border: 1px solid rgba(201,168,76,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .contact-item-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .contact-item-value {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--color-text);
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 2.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      font-family: var(--font-family);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--color-text);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 0.875rem 1rem;
+      outline: none;
+      transition: var(--transition);
+      resize: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--color-accent);
+      background: rgba(201,168,76,0.05);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(154,154,148,0.5);
+    }
+
+    .form-submit {
+      width: 100%;
+      font-size: 1rem;
+      padding: 1rem;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      background: #060606;
+      padding: var(--space-xl) 0 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: var(--space-lg);
+      padding-bottom: var(--space-xl);
+    }
+
+    .footer-logo {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-tagline {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+    }
+
+    .footer-col h4 {
+      font-size: var(--fs-label);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    .footer-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover { color: var(--color-accent); }
+
+    .footer-contact-item {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: 0.625rem;
+      line-height: 1.5;
+    }
+
+    .footer-contact-item strong {
+      color: var(--color-text);
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--color-divider);
+      padding: 1.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom-links a {
+      font-size: 0.8125rem;
+      color: var(--color-text-muted);
+      transition: var(--transition);
+    }
+
+    .footer-bottom-links a:hover { color: var(--color-accent); }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      :root {
+        --space-xxl: 6rem;
+        --space-xl:  4rem;
+      }
+
+      .about-grid,
+      .contact-grid { gap: var(--space-lg); }
+
+      .services-grid { grid-template-columns: 1fr; }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-md);
+      }
+
+      .synapse-panel { padding: 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --space-xxl: 4.5rem;
+        --space-xl:  3rem;
+        --space-lg:  2.5rem;
+      }
+
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      .about-grid,
+      .contact-grid,
+      .process-inner,
+      .synapse-panel,
+      .synapse-panel.flip {
+        grid-template-columns: 1fr;
+        direction: ltr;
+      }
+
+      .process-right { position: static; }
+      .process-img-wrap { aspect-ratio: 16/9; }
+
+      .hero-stats {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hero-stat { border-right: none; border-bottom: 1px solid var(--color-border); }
+      .hero-stat:last-child { border-bottom: none; }
+
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+      }
+
+      .client-table { font-size: 0.85rem; }
+      .client-table th, .client-table td { padding: 0.75rem 1rem; }
+
+      .form-row { grid-template-columns: 1fr; }
+
+      .hero-buttons { flex-direction: column; align-items: flex-start; }
+
+      .cta-buttons { flex-direction: column; align-items: center; }
+
+      .footer-bottom { flex-direction: column; text-align: center; }
+
+      .synapse-img-wrap { aspect-ratio: 16/9; }
+      .about-image-wrap { aspect-ratio: 16/9; }
+
+      .hero-stat-num { font-size: 1.1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 0 1.25rem; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .client-table { display: block; overflow-x: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <nav class="nav-inner" role="navigation" aria-label="Primary navigation">
+        <a href="#home" class="nav-logo" aria-label="Neuro Transformers Home">Neuro Transformers</a>
+        <ul class="nav-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#synapse">Synapse OS</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Book a Strategy Call</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#synapse">Synapse OS</a>
+        <a href="#clients">Clients</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary" style="margin-top:0.5rem;text-align:center;justify-content:center;">Book a Strategy Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         1. HERO SECTION
+    ============================================================ -->
+    <section id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80"
+          alt="Enterprise team collaboration in a modern workspace"
+          loading="eager"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-dotgrid"></div>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="section-label reveal">Enterprise Workforce &amp; AI Engineering</span>
+          <h1 id="hero-heading" class="reveal reveal-delay-1">
+            The Strategic Alliance Powering India's <span>Enterprise Talent Engine.</span>
+          </h1>
+          <p class="hero-sub reveal reveal-delay-2">
+            Neuro Transformers unites elite sourcing, automated recruitment workflows, and conversational AI to deliver workforce scale, speed, and quality — at institutional depth.
+          </p>
+          <div class="hero-buttons reveal reveal-delay-3">
+            <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+          <div class="hero-stats reveal reveal-delay-4" role="list" aria-label="Key statistics">
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">250+</span>
+              <span class="hero-stat-label">Trusted Partners</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">10,000+</span>
+              <span class="hero-stat-label">Deployments</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">3</span>
+              <span class="hero-stat-label">Proprietary Tech Partners</span>
+            </div>
+            <div class="hero-stat" role="listitem">
+              <span class="hero-stat-num">Pan-India</span>
+              <span class="hero-stat-label">Operations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. TRUSTED BY — MARQUEE
+    ============================================================ -->
+    <section id="trusted" aria-label="Trusted by India's Leading Enterprises">
+      <p class="trusted-label">Trusted By India's Leading Enterprises</p>
+      <div class="marquee-wrapper" aria-hidden="true">
+        <div class="marquee-track">
+          <!-- duplicate set for seamless loop -->
+          <span class="logo-pill">Adani Solar</span>
+          <span class="logo-pill">Soleos Green Energy</span>
+          <span class="logo-pill">NoBroker</span>
+          <span class="logo-pill">Paytm</span>
+          <span class="logo-pill">Wow! Momo</span>
+          <span class="logo-pill">GeBBS Healthcare</span>
+          <span class="logo-pill">Transcom</span>
+          <span class="logo-pill">Power Palazzo</span>
+          <span class="logo-pill">Kickstart Vision</span>
+          <!-- duplicate -->
+          <span class="logo-pill">Adani Solar</span>
+          <span class="logo-pill">Soleos Green Energy</span>
+          <span class="logo-pill">NoBroker</span>
+          <span class="logo-pill">Paytm</span>
+          <span class="logo-pill">Wow! Momo</span>
+          <span class="logo-pill">GeBBS Healthcare</span>
+          <span class="logo-pill">Transcom</span>
+          <span class="logo-pill">Power Palazzo</span>
+          <span class="logo-pill">Kickstart Vision</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. ABOUT / STRATEGIC OVERVIEW
+    ============================================================ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <span class="section-label reveal">Strategic Overview</span>
+            <h2 id="about-heading" class="about-heading reveal reveal-delay-1">
+              We Don't Fill Roles. We <span>Co-Own Your Workforce</span> Outcomes.
+            </h2>
+            <p class="about-body reveal reveal-delay-2">
+              Neuro Transformers Private Limited is an institutional-scale workforce logistics and AI engineering firm headquartered in Ahmedabad, Gujarat. We operate through the <strong style="color: var(--color-text);">Synapse Workforce OS</strong> — a tri-partner technology alliance combining the sourcing depth of SetuJobs, the automation intelligence of AutoRecruiter, and the voice AI capabilities of Vaanitra.
+            </p>
+            <p class="about-body reveal reveal-delay-2" style="margin-top:-1rem;">
+              Our model is not transactional. We embed into your workforce planning cycles, absorb demand volatility, and co-own outcomes — from first sourcing signal to final onboarding activation. Whether you're scaling a 500-person BPO floor, standing up an AI engineering squad, or deploying field teams across remote solar installations, we deliver with enterprise-grade compliance and logistics rigor.
+            </p>
+            <div class="feature-pills reveal reveal-delay-3">
+              <span class="feature-pill">✦ Scale at Demand</span>
+              <span class="feature-pill">✦ Shared Risk Model</span>
+              <span class="feature-pill">✦ AI-Powered Vetting</span>
+            </div>
+          </div>
+          <div class="about-image-wrap reveal reveal-delay-2">
+            <img
+              src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
+              alt="Workforce strategy team collaborating in a professional environment"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ============================================================
+         4. SERVICES / ALLIANCES
+    ============================================================ -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-header">
+          <span class="section-label reveal">Our Alliance Capabilities</span>
+          <h2 id="services-heading" class="reveal reveal-delay-1">
+            Three Deep Alliances.<br />One Unified Workforce Operating System.
+          </h2>
+        </div>
+        <div class="services-grid">
+
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-icon" aria-hidden="true">⚡</div>
+            <h3>High-Volume Field Mobilization</h3>
+            <p>From renewable mega-projects to gig logistics and frontline BPO, we deploy verified field talent at speed and scale across every Indian geography.</p>
+            <ul class="service-list" aria-label="Field Mobilization services">
+              <li>Renewable energy &amp; solar mega-projects</li>
+              <li>Gig logistics &amp; last-mile operations</li>
+              <li>Frontline sales force deployment</li>
+              <li>BPO &amp; healthcare back-office teams</li>
+              <li>FMCG &amp; food-tech field workforce</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-icon" aria-hidden="true">🧠</div>
+            <h3>Co-Engineered IT &amp; AI Squads</h3>
+            <p>Dedicated AI/ML engineering teams, full-stack product squads, and LLM fine-tuning resources — embedded into your product lifecycle, not just staffed.</p>
+            <ul class="service-list" aria-label="IT and AI squad services">
+              <li>Dedicated AI/ML engineering teams</li>
+              <li>Full-stack product squads</li>
+              <li>LLM fine-tuning &amp; prompt engineering</li>
+              <li>Data science &amp; analytics resources</li>
+              <li>IT staffing for enterprise digital projects</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </article>
+
+          <article class="service-card reveal reveal-delay-3">
+            <div class="service-icon" aria-hidden="true">🤝</div>
+            <h3>Custom Joint AI Product Development</h3>
+            <p>Multi-agent systems, voice automation platforms, and co-owned IP models — we build proprietary AI intelligence layers alongside your team under shared ownership frameworks.</p>
+            <ul class="service-list" aria-label="Joint AI product development services">
+              <li>Multi-agent orchestration systems</li>
+              <li>Voice automation &amp; IVR replacement</li>
+              <li>Co-owned IP product development</li>
+              <li>Custom intelligence layers &amp; RAG systems</li>
+              <li>Enterprise AI integration consulting</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. SYNAPSE WORKFORCE OS
+    ============================================================ -->
+    <section id="synapse" aria-labelledby="synapse-heading">
+      <div class="container">
+        <div class="synapse-header">
+          <span class="section-label reveal">Powered By</span>
+          <h2 id="synapse-heading" class="reveal reveal-delay-1">
+            The Synapse Workforce OS —<br />Our Proprietary Tech Alliance.
+          </h2>
+        </div>
+
+        <div class="synapse-panels">
+
+          <!-- Panel 1: SetuJobs -->
+          <div class="synapse-panel reveal">
+            <div class="synapse-text">
+              <div class="synapse-domain">setujobs.com</div>
+              <p class="synapse-sub">Primary Sourcing Engine</p>
+              <h3>SetuJobs — Geo-Tagged Talent at Scale</h3>
+              <p>
+                SetuJobs is our primary candidate sourcing engine — a geo-tagged, verified blue and grey-collar talent database spanning metro cities, tier-2 towns, and rural India. It enables instant large-volume candidate routing based on location, skill-match, and availability signals, dramatically compressing time-to-shortlist for high-velocity deployments.
+              </p>
+              <div class="synapse-tags" aria-label="SetuJobs capabilities">
+                <span class="synapse-tag">Geo-Tagged Profiles</span>
+                <span class="synapse-tag">Blue & Grey Collar</span>
+                <span class="synapse-tag">Verified Database</span>
+                <span class="synapse-tag">Instant Routing</span>
+                <span class="synapse-tag">Rural Coverage</span>
+              </div>
+            </div>
+            <div class="synapse-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80"
+                alt="IT and technology staffing team at work in a modern office"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Panel 2: AutoRecruiter (flipped) -->
+          <div class="synapse-panel flip reveal">
+            <div class="synapse-text">
+              <div class="synapse-domain">autorecruiter.io</div>
+              <p class="synapse-sub">Workflow Automation Partner</p>
+              <h3>AutoRecruiter — End-to-End Recruitment Orchestration</h3>
+              <p>
+                AutoRecruiter.io is our workflow automation backbone — handling end-to-end recruitment orchestration from job broadcasting and application tracking to technical screening, credential validation, and deployment tracking. It eliminates manual coordination bottlenecks and gives enterprise clients a real-time visibility dashboard into their talent pipeline.
+              </p>
+              <div class="synapse-tags" aria-label="AutoRecruiter capabilities">
+                <span class="synapse-tag">Pipeline Automation</span>
+                <span class="synapse-tag">Technical Screening</span>
+                <span class="synapse-tag">Credential Validation</span>
+                <span class="synapse-tag">Deployment Tracking</span>
+                <span class="synapse-tag">ATS Integration</span>
+              </div>
+            </div>
+            <div class="synapse-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80"
+                alt="Team reviewing automated recruitment workflows on a laptop"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <!-- Panel 3: Vaanitra -->
+          <div class="synapse-panel reveal">
+            <div class="synapse-text">
+              <div class="synapse-domain">vaanitra.com</div>
+              <p class="synapse-sub">Cognitive Voice AI Partner</p>
+              <h3>Vaanitra — Low-Latency Voice AI at Vernacular Scale</h3>
+              <p>
+                Vaanitra provides low-latency conversational voice AI capable of screening thousands of candidates simultaneously in regional Indian vernacular languages — Hindi, Gujarati, Tamil, Telugu, and more. Beyond recruitment, Vaanitra's voice stack is deployed by enterprise clients for customer care, lead qualification, and multilingual IVR replacement at scale.
+              </p>
+              <div class="synapse-tags" aria-label="Vaanitra capabilities">
+                <span class="synapse-tag">Vernacular AI</span>
+                <span class="synapse-tag">Low-Latency Voice</span>
+                <span class="synapse-tag">Simultaneous Screening</span>
+                <span class="synapse-tag">Enterprise Care</span>
+                <span class="synapse-tag">10+ Languages</span>
+              </div>
+            </div>
+            <div class="synapse-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=800&q=80"
+                alt="Voice AI interface for multilingual candidate screening"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. STATS / SOCIAL PROOF
+    ============================================================ -->
+    <section id="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 id="stats-heading" class="visually-hidden">Key Performance Statistics</h2>
+        <div class="stats-grid" role="list" aria-label="Company statistics">
+          <div class="stat-item reveal" role="listitem">
+            <span class="stat-num" data-target="500" data-suffix="+">500+</span>
+            <span class="stat-desc">Field Deployments Managed</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-1" role="listitem">
+            <span class="stat-num" data-target="9">9</span>
+            <span class="stat-desc">Enterprise Clients Served</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2" role="listitem">
+            <span class="stat-num" data-target="3">3</span>
+            <span class="stat-desc">Proprietary Tech Partners</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3" role="listitem">
+            <span class="stat-num" style="font-size:clamp(1.75rem,3.5vw,2.75rem);">Pan-India</span>
+            <span class="stat-desc">Operations Coverage</span>
+          </div>
+        </div>
+
+        <div class="testimonial-block reveal">
+          <p class="testimonial-quote">
+            Neuro Transformers deployed over 200 field resources for our solar plant within 3 weeks. Their logistics model and compliance handling was unlike any staffing partner we've worked with.
+          </p>
+          <p class="testimonial-author">
+            Operations Head, <span>Adani Solar Plant — Gujarat</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CLIENT PORTFOLIO
+    ============================================================ -->
+    <section id="clients" aria-labelledby="clients-heading">
+      <div class="container">
+        <div class="clients-header">
+          <span class="section-label reveal">Case Portfolio</span>
+          <h2 id="clients-heading" class="reveal reveal-delay-1">
+            Trusted Across India's Most<br />Demanding Industries.
+          </h2>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <table class="client-table" aria-label="Client portfolio listing">
+            <thead>
+              <tr>
+                <th scope="col">Client</th>
+                <th scope="col">Industry</th>
+                <th scope="col">Engagement Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adani Solar</td>
+                <td><span class="industry-tag">Renewable Energy</span></td>
+                <td>Large-scale field mobilization for solar plant construction and operations workforce</td>
+              </tr>
+              <tr>
+                <td>Soleos Green Energy</td>
+                <td><span class="industry-tag">Solar EPC</span></td>
+                <td>Frontline technicians and project workforce for EPC solar installations across Gujarat</td>
+              </tr>
+              <tr>
+                <td>NoBroker</td>
+                <td><span class="industry-tag">PropTech</span></td>
+                <td>Inside sales and customer success staffing; telesales workforce for pan-India operations</td>
+              </tr>
+              <tr>
+                <td>Paytm</td>
+                <td><span class="industry-tag">Fintech</span></td>
+                <td>Field sales agents and merchant acquisition teams deployed across metro and tier-2 markets</td>
+              </tr>
+              <tr>
+                <td>Wow! Momo</td>
+                <td><span class="industry-tag">Food &amp; QSR</span></td>
+                <td>Gig delivery workforce and outlet-level operations staffing across multiple city clusters</td>
+              </tr>
+              <tr>
+                <td>GeBBS Healthcare</td>
+                <td><span class="industry-tag">Healthcare BPO</span></td>
+                <td>Medical coding, billing, and back-office process outsourcing workforce</td>
+              </tr>
+              <tr>
+                <td>Transcom</td>
+                <td><span class="industry-tag">Global BPO</span></td>
+                <td>Multilingual customer care agents and voice process staffing at scale</td>
+              </tr>
+              <tr>
+                <td>Power Palazzo</td>
+                <td><span class="industry-tag">Infrastructure</span></td>
+                <td>Site supervisors, civil engineers, and skilled blue-collar workforce for infrastructure projects</td>
+              </tr>
+              <tr>
+                <td>Kickstart Vision</td>
+                <td><span class="industry-tag">EdTech / Startup</span></td>
+                <td>Co-engineered AI product squads and early-stage tech talent placement for product development</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. PROCESS / HOW IT WORKS
+    ============================================================ -->
+    <section id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="process-inner">
+          <div class="process-left">
+            <span class="section-label reveal">How It Works</span>
+            <h2 id="process-heading" class="reveal reveal-delay-1">
+              A Structured 3-Stage Engagement Built for Enterprise Scale.
+            </h2>
+
+            <div class="steps" aria-label="Three-stage engagement process">
+
+              <div class="step reveal reveal-delay-2">
+                <div class="step-number-col" aria-hidden="true">
+                  <div class="step-num">01</div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-body">
+                  <div class="step-icon" aria-hidden="true">🗺️</div>
+                  <h3>Strategic Alignment &amp; Demand Mapping</h3>
+                  <p>We begin with a structured discovery: analyzing your workforce forecasts, compliance requirements, cost budgets, and geographic spread. Our team designs a bespoke sourcing architecture and SLA framework — before a single CV is sent.</p>
+                </div>
+              </div>
+
+              <div class="step reveal reveal-delay-3">
+                <div class="step-number-col" aria-hidden="true">
+                  <div class="step-num">02</div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-body">
+                  <div class="step-icon" aria-hidden="true">🤖</div>
+                  <h3>Automated Voice Vetting at Volume</h3>
+                  <p>SetuJobs pipelines activate geo-matched candidate pools instantly. Vaanitra AI simultaneously screens large cohorts in regional vernacular languages within days — not weeks. AutoRecruiter tracks every touchpoint with full pipeline transparency.</p>
+                </div>
+              </div>
+
+              <div class="step reveal reveal-delay-4">
+                <div class="step-number-col" aria-hidden="true">
+                  <div class="step-num">03</div>
+                  <div class="step-line"></div>
+                </div>
+                <div class="step-body">
+                  <div class="step-icon" aria-hidden="true">🚀</div>
+                  <h3>Onboarding &amp; Offer Release Support</h3>
+                  <p>Our team provides hands-on final-mile coordination: offer letter generation, candidate communication management, document verification, and seamless activation onto your systems. We don't stop at shortlisting — we co-own joining success.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="process-right reveal reveal-delay-2">
+            <div class="process-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80"
+                alt="Enterprise team discussing structured recruitment process and workflow planning"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. CTA BAND
+    ============================================================ -->
+    <section id="cta" aria-labelledby="cta-heading">
+      <div class="cta-bg" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1400&q=80"
+          alt="Enterprise leadership meeting"
+          loading="lazy"
+        />
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="cta-content">
+          <span class="section-label reveal">Partner With Us</span>
+          <h2 id="cta-heading" class="reveal reveal-delay-1">
+            Ready to Build Workforce Resilience at Enterprise Scale?
+          </h2>
+          <p class="reveal reveal-delay-2">
+            Partner with Neuro Transformers and gain access to the Synapse Workforce OS — India's most advanced tri-partner recruitment and AI engineering alliance. Built for speed, compliance, and institutional depth.
+          </p>
+          <div class="cta-buttons reveal reveal-delay-3">
+            <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
+            <a href="#contact" class="btn btn-secondary">Download Company Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         10. CONTACT SECTION
+    ============================================================ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <span class="section-label reveal">Get In Touch</span>
+            <h2 id="contact-heading" class="reveal reveal-delay-1">
+              Let's Build Your Workforce Strategy Together.
+            </h2>
+            <p class="reveal reveal-delay-2">
+              Whether you need to scale a 500-person field team, build a dedicated AI squad, or explore a joint AI product venture — our team is ready for a strategic conversation. Reach out and we'll schedule an alignment call within 24 hours.
+            </p>
+
+            <div class="contact-items reveal reveal-delay-3">
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">✉️</div>
+                <div>
+                  <p class="contact-item-label">Email</p>
+                  <p class="contact-item-value">hello@neurotransformers.in</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📞</div>
+                <div>
+                  <p class="contact-item-label">Phone</p>
+                  <p class="contact-item-value">+91 98765 43210</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">📍</div>
+                <div>
+                  <p class="contact-item-label">Headquarters</p>
+                  <p class="contact-item-value">Ahmedabad, Gujarat, India</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">🕐</div>
+                <div>
+                  <p class="contact-item-label">Response Time</p>
+                  <p class="contact-item-value">Within 24 business hours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form reveal reveal-delay-2">
+            <form action="#" method="POST" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    name="full_name"
+                    placeholder="Rahul Sharma"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Your Company Ltd."
+                    required
+                    autocomplete="organization"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="rahul@company.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 98765 43210"
+                    autocomplete="tel"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your workforce or AI engineering challenge — scale, timeline, and geography are helpful details."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       11. FOOTER
+  ============================================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col-brand">
+          <p class="footer-logo">Neuro Transformers</p>
+          <p class="footer-tagline">
+            Enterprise Sourcing. Logistics.<br />
+            Joint Alliances. Deep AI Engineering.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#synapse">Synapse OS</a>
+            <a href="#clients">Clients</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Partners</h4>
+          <nav class="footer-links" aria-label="Technology partners">
+            <a href="#synapse">SetuJobs</a>
+            <a href="#synapse">AutoRecruiter</a>
+            <a href="#synapse">Vaanitra</a>
+          </nav>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <strong>Email</strong><br />hello@neurotransformers.in
+          </div>
+          <div class="footer-contact-item">
+            <strong>Phone</strong><br />+91 98765 43210
+          </div>
+          <div class="footer-contact-item">
+            <strong>Location</strong><br />Ahmedabad, Gujarat, India
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Neuro Transformers Private Limited. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       VANILLA JS — Navbar scroll, Hamburger, Reveal, Counter
+  ============================================================ -->
+  <script>
+    /* ----- Sticky Navbar ---------------------------------------- */
+    const navbar = document.getElementById('navbar');
+    const SCROLL_THRESHOLD = 60;
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
+    }, { passive: true });
+
+    /* ----- Hamburger Menu --------------------------------------- */
+    const hamburger  = document.getElementById('hamburger');
+    const mobileNav  = document.getElementById('mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    /* Close mobile menu when any link is clicked */
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ----- Smooth scroll for all anchor links ------------------- */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = navbar.offsetHeight + 16;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    /* ----- Scroll Reveal (Intersection Observer) ---------------- */
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* ----- Number Counter Animation ----------------------------- */
+    function animateCounter(el) {
+      const target  = parseInt(el.dataset.target, 10);
+      const suffix  = el.dataset.suffix || '';
+      if (!target) return;
+      const duration = 1800;
+      const start    = performance.now();
+
+      function update(now) {
+        const elapsed  = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        /* ease-out cubic */
+        const eased  = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        el.textContent = current + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      }
+
+      requestAnimationFrame(update);
+    }
+
+    const counterObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            counterObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll('.stat-num[data-target]').forEach(el => counterObserver.observe(el));
+  </script>
+
+</body>
+</html>
