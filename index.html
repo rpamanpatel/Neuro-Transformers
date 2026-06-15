@@ -1138,11 +1138,13 @@
       background: var(--color-bg-mid);
     }
 
+    /* top two-column: heading+text | form */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1.25fr;
       gap: var(--space-xl);
       align-items: start;
+      margin-bottom: 1.5rem;
     }
 
     .contact-left h2 {
@@ -1156,52 +1158,64 @@
     .contact-left > p {
       color: var(--color-text-muted);
       line-height: 1.8;
-      margin-bottom: 1.75rem;
+      margin: 0;
     }
 
-    /* 2×2 grid of compact info cards */
+    /* 4-column horizontal bar below the form */
     .contact-items {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.875rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
     }
 
     .contact-item {
       display: flex;
       align-items: center;
-      gap: 0.875rem;
+      gap: 0.75rem;
+      padding: 1.125rem 1.25rem;
       background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: 1rem 1.125rem;
+      border-right: 1px solid var(--color-border);
       transition: var(--transition);
     }
 
+    .contact-item:last-child { border-right: none; }
+
     .contact-item:hover {
-      border-color: rgba(201,168,76,0.35);
-      background: rgba(201,168,76,0.04);
+      background: rgba(201,168,76,0.05);
     }
 
     .contact-icon {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
       border-radius: var(--radius-sm);
       background: var(--color-accent-dim);
       border: 1px solid rgba(201,168,76,0.2);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1rem;
+      font-size: 0.95rem;
       flex-shrink: 0;
     }
 
+    .contact-item-text {
+      display: flex;
+      align-items: baseline;
+      gap: 0.45rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+    }
+
     .contact-item-label {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--color-text-muted);
-      margin: 0 0 0.15rem 0;
+      color: var(--color-accent);
+      white-space: nowrap;
+      flex-shrink: 0;
       line-height: 1;
     }
 
@@ -1209,8 +1223,10 @@
       font-size: 0.875rem;
       font-weight: 500;
       color: var(--color-text);
-      margin: 0;
-      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1;
     }
 
     /* Contact Form */
@@ -1429,7 +1445,10 @@
       .client-table { font-size: 0.85rem; }
       .client-table th, .client-table td { padding: 0.75rem 1rem; }
 
-      .contact-items { grid-template-columns: 1fr; }
+      .contact-items { grid-template-columns: 1fr 1fr; }
+      .contact-item { border-right: none; border-bottom: 1px solid var(--color-border); }
+      .contact-item:nth-child(odd) { border-right: 1px solid var(--color-border); }
+      .contact-item:nth-last-child(-n+2) { border-bottom: none; }
 
       .form-row { grid-template-columns: 1fr; }
 
@@ -1976,37 +1995,6 @@
             <p class="reveal reveal-delay-2">
               Whether you need to scale a 500-person field team, build a dedicated AI squad, or explore a joint AI product venture — our team is ready for a strategic conversation. Reach out and we'll schedule an alignment call within 24 hours.
             </p>
-
-            <div class="contact-items reveal reveal-delay-3">
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">✉️</div>
-                <div>
-                  <p class="contact-item-label">Email</p>
-                  <p class="contact-item-value">hello@neurotransformers.in</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">📞</div>
-                <div>
-                  <p class="contact-item-label">Phone</p>
-                  <p class="contact-item-value">+91 98765 43210</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">📍</div>
-                <div>
-                  <p class="contact-item-label">Headquarters</p>
-                  <p class="contact-item-value">Ahmedabad, Gujarat, India</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-icon" aria-hidden="true">🕐</div>
-                <div>
-                  <p class="contact-item-label">Response Time</p>
-                  <p class="contact-item-value">Within 24 business hours</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div class="contact-form reveal reveal-delay-2">
@@ -2074,6 +2062,39 @@
             </form>
           </div>
         </div>
+
+        <!-- 4-item horizontal contact bar -->
+        <div class="contact-items reveal">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Email</span>
+              <span class="contact-item-value">hello@neurotransformers.in</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Phone</span>
+              <span class="contact-item-value">+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📍</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">HQ</span>
+              <span class="contact-item-value">Ahmedabad, Gujarat, India</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">🕐</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Response</span>
+              <span class="contact-item-value">Within 24 business hours</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
